@@ -1,10 +1,12 @@
 #include "Utilitaire.h"
 
-Entrepot CreateWarehouse(char * unNom)
+entrepot CreateWarehouse(char * unNom)
 {
-	Entrepot unEntrepot(unNom);
-	for (int i = 0; i < Products.size(); ++i)
+	int i;
+	entrepot unEntrepot;
+	unEntrepot.nomMagasin = unNom;
+	for (i = 0; i < Produit.size(); ++i)
 	{
-		Entrepot.Products[i] = 0;
+		unEntrepot.Produit[i] = 0;
 	}
 }
