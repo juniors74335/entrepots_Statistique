@@ -47,12 +47,12 @@ int StockBas(Entrepot monEntrepot,int nbrStockMax) {
 }
 
 
-entrepot CreateWarehouse(char * unNom)
+entrepot CreateWarehouse(char* unNom)
 {
 	int i;
 	entrepot unEntrepot;
 	unEntrepot.nomMagasin = unNom;
-	for (i = 0; i < Produit.size(); ++i)
+	for (i = 0; i < 500; ++i)
 	{
 		unEntrepot.Produit[i].id = 0;
 	}

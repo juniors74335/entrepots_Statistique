@@ -1,3 +1,9 @@
+#ifndef ENTREPOT_H
+#define ENTREPOT_H
+
+
+
+
 struct produit
 {
 	char* nom[50];
@@ -10,7 +16,7 @@ struct produit
 struct entrepot
 {
 	char* nomMagasin;
-	struct Produit[500];
+	struct produit Produit[500];
 };
 
 
@@ -20,7 +26,9 @@ typedef struct produit produit;
 
 
 
-entrepot CreateWarehouse(char * unNom);
+entrepot CreateWarehouse(char* unNom);
 int CreateProduct(Entrepot monEntrepot, produit monProduit);
 void ChangeStockProduct(Entrepot monEntrepot,int idProduit,int nbrProduit);
 int StockBas(Entrepot monEntrepot,int nbrStockMax);
+
+#endif
