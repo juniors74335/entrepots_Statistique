@@ -13,6 +13,7 @@ struct entrepot
 	struct Produit[500];
 };
 
+entrepot CreateWarehouse(char * unNom);
 
 typedef struct entrepot* Entrepot;
 typedef struct entrepot entrepot;
