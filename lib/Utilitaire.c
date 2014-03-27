@@ -1,4 +1,5 @@
 #include "Utilitaire.h"
+#include <stdio.h>
 
 entrepot CreateWarehouse(char * unNom)
 {
@@ -9,4 +10,9 @@ entrepot CreateWarehouse(char * unNom)
 	{
 		unEntrepot.Produit[i] = 0;
 	}
+}
+
+void PrintWarehouse (Warehouse myWarehouse)
+{
+	printf("nom magasin : %s, id produit : %s, nom produit : %s, stock : %s, baisse stock : %s ", nomMagasin, idProduit, nomProduit, Stock, BaisseStock);
 }
