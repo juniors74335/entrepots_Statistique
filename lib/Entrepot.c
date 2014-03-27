@@ -1,4 +1,6 @@
 #include "Entrepot.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int CreateProduct(Entrepot monEntrepot, produit monProduit) {
 	int i;
@@ -57,4 +59,17 @@ entrepot CreateWarehouse(char* unNom)
 		unEntrepot.Produit[i].id = 0;
 	}
 	return unEntrepot;
+}
+
+
+void PrintWarehouse(Entrepot monEntrepot)
+{
+	int i;
+	printf("nom magasin : %s\n", monEntrepot->nomMagasin);
+	for (i = 0; i < 500; i++)
+	{
+		if(monEntrepot->Produit[i].id != 0)
+			printf("id produit : %d, nom produit : %s, stock : %d, baisse stock : %d \n",monEntrepot->Produit[i].id, monEntrepot->Produit[i].nom, monEntrepot->Produit[i].stock, monEntrepot->Produit[i].baisseStock);
+	}
+	
 }

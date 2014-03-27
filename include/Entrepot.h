@@ -30,5 +30,6 @@ entrepot CreateWarehouse(char* unNom);
 int CreateProduct(Entrepot monEntrepot, produit monProduit);
 void ChangeStockProduct(Entrepot monEntrepot,int idProduit,int nbrProduit);
 int StockBas(Entrepot monEntrepot,int nbrStockMax);
+void PrintWarehouse (Entrepot monEntrepot);
 
 #endif

@@ -15,9 +15,12 @@ int main(){
 	Entrepot ptrUnEntrepot;
 	entrepot unEntrepot;
 	char unNom[50];
+	produit monProduit;
 
 	scanf("%s",unNom);
 	unEntrepot = CreateWarehouse(unNom);
-	printf("%s",unEntrepot.nomMagasin);
+	ptrUnEntrepot = &unEntrepot;
+	printf("%s",ptrUnEntrepot->nomMagasin);
+	monProduit.
 	return 0;
 }
