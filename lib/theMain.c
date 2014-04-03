@@ -37,8 +37,9 @@ int main(){
 	}*/
 	
 	PrintWarehouse(ptrUnEntrepot);
-
-
+	StockProduit(".\\bin\\unProduit.txt", unEntrepot);
+	StockEntrepot(".\\bin\\unEntrepot.txt", unEntrepot.Produit[0]);
+	StockAll(".\\bin\\StockTotal.txt", unEntrepot);
 	ChangeStockProduct(ptrUnEntrepot,3,-90);
 	ChangeStockProduct(ptrUnEntrepot,5,-80);
 	ChangeStockProduct(ptrUnEntrepot,1,-78);

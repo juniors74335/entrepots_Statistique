@@ -1,6 +1,8 @@
 #ifndef ENTREPOT_H
 #define ENTREPOT_H
 
+#include "Affichage.h"
+
 struct produit
 {
 	char nom[50];
