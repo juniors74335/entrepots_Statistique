@@ -7,9 +7,9 @@
 #include <string.h>
 #include "Entrepot.h"
 
-static void StockProduit(char*, produit);
-static void StockEntrepot(char*, entrepot);
-static void StockAll(char*, entrepot);
-
+static void StockProduit(FILE* unFichier, produit unProduit);
+static void StockEntrepot(FILE* unFichier, entrepot unEntrepot);
+void StockAll(char* unNomFichier, entrepot unEntrepot);
+entrepot ExtractionEntrepot(char* unNomFichier);
 
 #endif
