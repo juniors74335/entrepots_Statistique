@@ -6,7 +6,7 @@
 
 struct produit
 {
-	char* nom[50];
+	char nom[50];
 	int id;
 	float prix;
 	int stock;

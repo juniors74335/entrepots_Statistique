@@ -17,6 +17,7 @@ int CreateProduct(Entrepot monEntrepot, produit monProduit) {
 	{
 		if(monEntrepot->Produit[i].id == 0) {
 			monEntrepot->Produit[i] = monProduit;
+			return -1;
 		}
 	}
 	return -1;

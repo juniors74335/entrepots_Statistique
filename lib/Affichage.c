@@ -1,5 +1,5 @@
 #include "Affichage.h"
-
+/*
 static void StockProduit(char* unNomFichier, produit unProduit)
 {
 	unFichier = fopen(unNomFichier, a);
@@ -27,3 +27,4 @@ static void StockAll(char* unNomFichier, entrepot unEntrepot)
     }  
     fclose(unFichier); // On ferme le fichier qui a été ouvert
 }
+*/
