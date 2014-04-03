@@ -6,7 +6,7 @@ static void StockProduit(char* unNomFichier, produit unProduit)
 	unFichier = fopen(unNomFichier, "a");
 	if (unFichier != NULL)
     {
-        fputs(unProduit.nom + "|" + unProduit.id + "|" + unProduit.prix + "|" + unProduit.stock + "|" + unProduit.baisseStock + "\n", unFichier);// On stock les produits un à un    
+        fprintf(unProduit.nom + "|" + unProduit.id + "|" + unProduit.prix + "|" + unProduit.stock + "|" + unProduit.baisseStock + "\n", unFichier);// On stock les produits un à un    
         fclose(unFichier); // On ferme le fichier qui a été ouvert
     }
 }
@@ -16,7 +16,7 @@ static void StockEntrepot(char* unNomFichier, entrepot unEntrepot)
 	unFichier = fopen(unNomFichier, "a");
 	if (unFichier != NULL)
     {
-        fputs(unEntrepot.nom "\n", unFichier);// On stock le nom de l'entrepot
+        fprintf(unEntrepot.nom  + "\n", unFichier);// On stock le nom de l'entrepot
         fclose(unFichier); // On ferme le fichier qui a été ouvert
     }
 }
@@ -36,7 +36,7 @@ void AffichageEntrepot(char* unNomFichier)
     unFichier = fopen(unNomFichier, "r");
     if (unFichier != NULL)
     {
-        fputs(unEntrepot.nom "\n", unFichier);// On stock le nom de l'entrepot
+
         fclose(unFichier); // On ferme le fichier qui a été ouvert
     }  
 
