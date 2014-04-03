@@ -1,9 +1,6 @@
 #ifndef ENTREPOT_H
 #define ENTREPOT_H
 
-
-
-
 struct produit
 {
 	char nom[50];

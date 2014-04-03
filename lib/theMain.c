@@ -2,15 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
-
-
-
-
-
-
-
 int main(){
 	Entrepot ptrUnEntrepot;
 	entrepot unEntrepot;
@@ -36,11 +27,6 @@ int main(){
 
 		CreateProduct(ptrUnEntrepot,monProduit);
 	}
-
-	
-
-
-	
 
 
 	/*for(i=0;i< 500;i++) {
