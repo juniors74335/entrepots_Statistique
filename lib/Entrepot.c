@@ -42,8 +42,10 @@ int StockBas(Entrepot monEntrepot,int nbrStockMax) {
 
 	for (i = 0; i < 500; i++)
 	{
-		if(monEntrepot->Produit[i].stock <= nbrStockMax) {
-			nbrProduit++;
+		if(monEntrepot->Produit[i].id != 0) {
+			if(monEntrepot->Produit[i].stock <= nbrStockMax) {
+				nbrProduit++;
+			}
 		}
 	}
 	return nbrProduit;

@@ -33,7 +33,7 @@ int main(){
 		monProduit.id = i;
 		monProduit.prix = 12;
 		monProduit.stock = 100;
-		
+
 		CreateProduct(ptrUnEntrepot,monProduit);
 	}
 
@@ -51,6 +51,15 @@ int main(){
 	}*/
 	
 	PrintWarehouse(ptrUnEntrepot);
+
+
+	ChangeStockProduct(ptrUnEntrepot,3,-90);
+	ChangeStockProduct(ptrUnEntrepot,5,-80);
+	ChangeStockProduct(ptrUnEntrepot,1,-78);
+
+	PrintWarehouse(ptrUnEntrepot);
+
+	printf("Nombre de produit dont le stock est inférieur a 25 : %d\n",StockBas(ptrUnEntrepot,25));
 
 	return 0;
 }
