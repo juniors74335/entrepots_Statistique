@@ -4,6 +4,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "Entrepot.h"
 
 static void StockProduit(char*, produit);
