@@ -14,10 +14,10 @@ struct commande
 
 typedef struct commande commande;
 
-void CancelComm();
-void ValideComm();
-void SaveComm();
-void AffichComm();
+void CancelComm(commande uneCommande);
+void ValideComm(commande uneCommande);
+void SaveComm(commande uneCommande);
+void AffichComm(commande uneCommande);
 
 
 #endif

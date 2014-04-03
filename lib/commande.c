@@ -2,22 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void CancelComm()
+void CancelComm(commande uneCommande)
 {
 	
 }
 
-void ValidComm()
+void ValidComm(commande uneCommande)
 {
 
 }
 
-void SaveComm()
+void SaveComm(commande uneCommande)
 {
 
 }
 
-void AffichComm()
+void AffichComm(commande uneCommande)
 {
 
 }
