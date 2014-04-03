@@ -23,5 +23,6 @@ typedef struct panier panier;
 typedef struct produit produit;
 
 void CreatePanier(Panier monPanier);
+void AddProduct();
 
 #endif

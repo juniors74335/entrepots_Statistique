@@ -13,3 +13,8 @@ void CreatePanier(Panier monPanier)
 
 	}
 }
+
+void AddProduct()
+{
+
+}
