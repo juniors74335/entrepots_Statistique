@@ -42,3 +42,13 @@ entrepot ExtractionEntrepot(char* unNomFichier)
     } 
     fclose(unFichier); // On ferme le fichier qui a été ouvert
 }
+
+void SaveComm(char* unFicComm)
+{
+	FILE* unFicComm = NULL;
+	unFicComm = fopen(unFicComm, "r");
+	if (unFicComm != NULL)
+	{
+		
+	}
+}
