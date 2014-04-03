@@ -1,6 +1,6 @@
 struct produit
 {
-	char* nom[50];
+	char nom[50];
 	int id;
 	float prix;
 	int quantité;
@@ -14,3 +14,5 @@ struct panier
 typedef struct panier* Panier;
 typedef struct panier panier;
 typedef struct produit produit;
+
+void CreatePanier(Panier monPanier);
