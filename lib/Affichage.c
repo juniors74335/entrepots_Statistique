@@ -28,11 +28,17 @@ void StockAll(char* unNomFichier, entrepot unEntrepot)
 }
 entrepot ExtractionEntrepot(char* unNomFichier)
 {
+    entrepot unEntrepot;
+    int i;
     FILE* unFichier = NULL;
     unFichier = fopen(unNomFichier, "r");
     if (unFichier != NULL)
     {
-        
+        fscanf(unFichier, "%s\n", unEntrepot.nomMagasin);
+        for (i = 0; i < 500; ++i)
+        {
+            fscanf(unFichier, "%s|%d|%f|%d|%d\n", unEntrepot.Produit[i].nom, unEntrepot.Produit[i].id, unEntrepot.Produit[i].prix, unEntrepot.Produit[i].stock, unEntrepot.Produit[i].baisseStock); // On stock les produits un à un
+        } 
     } 
     fclose(unFichier); // On ferme le fichier qui a été ouvert
 }
